@@ -1,121 +1,127 @@
-**Performance Testing E-Commerce REST APIs Using Apache JMeter**
+# 🧪 Performance Testing E-Commerce REST APIs Using Apache JMeter
 
- Project Overview
+## 📌 Project Overview
 
- This project focuses on load testing and validating REST API endpoints of the Platzi Fake Store API, simulating typical user actions such as creating, updating, deleting, and retrieving product details. The goal was to evaluate performance under stress and ensure correct functionality using Apache JMeter.
+This project focuses on **load testing and validating REST API endpoints** of the [Platzi Fake Store API](https://fakeapi.platzi.com/), simulating typical user actions such as creating, updating, deleting, and retrieving product details. The goal was to evaluate performance under stress and ensure correct functionality using **Apache JMeter**.
 
-Tools & Technologies
-1. Apache JMeter (v5.6+)
-2. JMeter Plugins (Graphs Generator Listener, Assertions, Timers)
-3. Postman (for initial testing)
-4. JSON REST API
-5. GitHub (for source and documentation)
+---
 
-Test Scenarios Implemented
+## 🛠️ Tools & Technologies
 
-Scenario 1: Create Product (POST /products)
-_Purpose: Simulate adding new products to the catalog._
+* **Apache JMeter** (v5.6+)
+* **JMeter Plugins** (Graphs Generator Listener, Assertions, Timers)
+* **Postman** (for initial testing)
+* **JSON REST API**
+* **GitHub** (for source and documentation)
 
-Assertions:
-Response Code = 201
-Response Data contains expected title, price, description
-Duration Assertion < 2000ms
+---
 
-Scenario 2: Update Product (PUT /products/{id})
-_Purpose: Test updating an existing product using a dynamic product ID._
+## 🎯 Test Scenarios Implemented
 
-Dynamic ID: Captured using JSON Extractor after product creation.
+### ✅ Scenario 1: Create Product (POST `/products`)
 
-Assertions:
-Response Code = 200
-Updated values reflected in response
+* **Purpose:** Simulate adding new products to the catalog.
+* **Assertions:**
 
-Scenario 3: Delete Product (DELETE /products/{id})
-_Purpose: Simulate deletion of a product and confirm status._
+  * Response Code = 201
+  * Response Data contains expected `title`, `price`, `description`
+  * Duration Assertion < 2000ms
 
-Assertions:
-Response Code = 200 or 204
+### ✅ Scenario 2: Update Product (PUT `/products/{id}`)
 
-Scenario 4: View Product (GET /products or /products/{id})
-_Purpose: Simulate users browsing products._
+* **Purpose:** Test updating an existing product using a dynamic product ID.
+* **Dynamic ID:** Captured using `JSON Extractor` after product creation.
+* **Assertions:**
 
-Assertions:
-Response Code = 200
-Response contains product list or valid details
+  * Response Code = 200
+  * Updated values reflected in response
 
-Scenario 5: Login (POST /auth/login)
+### ✅ Scenario 3: Delete Product (DELETE `/products/{id}`)
 
-Tested for: Valid credentials
+* **Purpose:** Simulate deletion of a product and confirm status.
+* **Assertions:**
 
-Outcome: Identified API issues (401 Unauthorized)
+  * Response Code = 200 or 204
 
-Performance Metrics Captured
+### ✅ Scenario 4: View Product (GET `/products` or `/products/{id}`)
 
-Response Time (ms)
+* **Purpose:** Simulate users browsing products.
+* **Assertions:**
 
-Latency
+  * Response Code = 200
+  * Response contains product list or valid details
 
-Throughput
+### ✅ Scenario 5: Login (POST `/auth/login`)
 
-Error %
+* **Tested for:** Valid credentials
+* **Outcome:** Identified API issues (401 Unauthorized)
 
-Assertion Pass/Fail Rate
+---
 
-📈 Visual Reports
+## 📊 Performance Metrics Captured
 
-Summary Report
+* **Response Time (ms)**
+* **Latency**
+* **Throughput**
+* **Error %**
+* **Assertion Pass/Fail Rate**
 
-Graph Results
+---
 
-Duration Assertions
+## 📈 Visual Reports
 
-View Results Tree (with sample responses and debug info)
+* Summary Report
+* Graph Results
+* Duration Assertions
+* View Results Tree (with sample responses and debug info)
 
-🧩 Debugging & Troubleshooting
+---
 
-401 Unauthorized issue was debugged using Postman.
+## 🧩 Debugging & Troubleshooting
 
-Dynamic value handling via JSON Extractor
+* **401 Unauthorized** issue was debugged using Postman.
+* Dynamic value handling via **JSON Extractor**
+* Timeout/Response null handling using **Assertions**
+* Parameterization using CSV and Variables planned
 
-Timeout/Response null handling using Assertions
+---
 
-Parameterization using CSV and Variables planned
+## 🚀 How to Run This Test
 
-🚀 How to Run This Test
+1. Clone the repo
+2. Open `product_test_plan.jmx` in Apache JMeter
+3. Run using GUI or CLI:
 
-Clone the repo
+   ```bash
+   jmeter -n -t product_test_plan.jmx -l result.jtl -e -o ./report
+   ```
+4. Open `./report/index.html` to view HTML report
 
-Open product_test_plan.jmx in Apache JMeter
+---
 
-Run using GUI or CLI:
+## 📝 Future Improvements
 
-jmeter -n -t product_test_plan.jmx -l result.jtl -e -o ./report
+* CI/CD integration using **Jenkins**
+* Integration with **Grafana + InfluxDB** for real-time monitoring
+* Use of CSV Data Set Config for user input simulation
+* Dockerized JMeter execution
 
-Open ./report/index.html to view HTML report
+---
 
-📝 Future Improvements
-
-CI/CD integration using Jenkins
-
-Integration with Grafana + InfluxDB for real-time monitoring
-
-Use of CSV Data Set Config for user input simulation
-
-Dockerized JMeter execution
-
-🤝 Contributions
+## 🤝 Contributions
 
 Pull requests are welcome! For any major changes, please open an issue first.
 
-📄 License
+---
 
-MIT
+## 📄 License
 
-🙌 Acknowledgements
+[MIT](LICENSE)
 
-Platzi Fake Store API
+---
 
-Apache JMeter
+## 🙌 Acknowledgements
 
-JMeter Plugins
-
+* [Platzi Fake Store API](https://fakeapi.platzi.com/)
+* [Apache JMeter](https://jmeter.apache.org/)
+* [JMeter Plugins](https://jmeter-plugins.org/)
