@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project focuses on **load testing and validating REST API endpoints** of the [Platzi Fake Store API](https://fakeapi.platzi.com/), simulating typical user actions such as creating, updating, deleting, and retrieving product details. The goal was to evaluate performance under stress and ensure correct functionality using **Apache JMeter**.
+This project focuses on **load testing, validating REST API endpoints and endurance testing** of the [Platzi Fake Store API](https://fakeapi.platzi.com/), simulating typical user actions such as creating, updating, deleting, and retrieving product details . The goal was to evaluate performance under stress and ensure correct functionality using **Apache JMeter**.
 
 ---
 
