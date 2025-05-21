@@ -1,0 +1,38 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1747818678345,1275,Delete product Request,400,Bad Request,Delete product Thread Group 5-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]00
+
+****** comparison: [[[2]]]00
+
+/",1776,191,1,13,https://api.escuelajs.co/api/v1/products/206,1266,0,989
+1747818678345,1275,Login - POST / auth/login,201,Created,Login Thread Group 1-1,text,true,,1813,278,2,13,https://api.escuelajs.co/api/v1/auth/login,1265,0,990
+1747818678886,782,Login - POST / auth/login,201,Created,Login Thread Group 1-2,text,true,,1813,278,1,11,https://api.escuelajs.co/api/v1/auth/login,782,0,521
+1747818678345,1441,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-2,text,true,,1932,375,5,10,https://api.escuelajs.co/api/v1/products/54,1441,0,989
+1747818678700,1086,Create Products- POST ,201,Created,Create Product Thread Group 3-3,text,true,,1932,372,5,10,https://api.escuelajs.co/api/v1/products,1086,0,634
+1747818678345,1443,Create Products- POST ,201,Created,Create Product Thread Group 3-2,text,true,,1932,372,5,10,https://api.escuelajs.co/api/v1/products,1443,0,989
+1747818678702,1102,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-3,text,true,,1932,375,5,10,https://api.escuelajs.co/api/v1/products/54,1102,0,632
+1747818678345,1489,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-1,text,true,,1932,375,5,10,https://api.escuelajs.co/api/v1/products/54,1489,0,989
+1747818678345,1629,Create Products- POST ,201,Created,Create Product Thread Group 3-1,text,true,,1932,372,5,11,https://api.escuelajs.co/api/v1/products,1629,0,989
+1747818679100,968,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-4,text,true,,1932,375,5,11,https://api.escuelajs.co/api/v1/products/54,968,0,545
+1747818679097,999,Create Products- POST ,201,Created,Create Product Thread Group 3-4,text,true,,1932,372,5,11,https://api.escuelajs.co/api/v1/products,998,0,523
+1747818679788,461,Create Products- POST ,201,Created,Create Product Thread Group 3-3,text,true,,1924,372,5,11,https://api.escuelajs.co/api/v1/products,461,0,0
+1747818679805,445,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-3,text,true,,1924,375,5,11,https://api.escuelajs.co/api/v1/products/54,445,0,0
+1747818679835,483,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-1,text,true,,1924,375,4,9,https://api.escuelajs.co/api/v1/products/54,483,0,0
+1747818679788,554,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-2,text,true,,1924,375,3,8,https://api.escuelajs.co/api/v1/products/54,554,0,0
+1747818679499,962,Create Products- POST ,201,Created,Create Product Thread Group 3-5,text,true,,1924,372,4,7,https://api.escuelajs.co/api/v1/products,962,0,520
+1747818679975,493,Create Products- POST ,201,Created,Create Product Thread Group 3-1,text,true,,1924,372,4,7,https://api.escuelajs.co/api/v1/products,493,0,0
+1747818680068,470,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-4,text,true,,1924,375,2,6,https://api.escuelajs.co/api/v1/products/54,469,0,0
+1747818679501,1067,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-5,text,true,,1924,375,1,5,https://api.escuelajs.co/api/v1/products/54,1067,0,575
+1747818679789,779,Create Products- POST ,201,Created,Create Product Thread Group 3-2,text,true,,1924,372,3,5,https://api.escuelajs.co/api/v1/products,779,0,0
+1747818680096,535,Create Products- POST ,201,Created,Create Product Thread Group 3-4,text,true,,1924,372,2,4,https://api.escuelajs.co/api/v1/products,535,0,0
+1747818679885,798,Login - POST / auth/login,201,Created,Login Thread Group 1-3,text,true,,1805,278,1,3,https://api.escuelajs.co/api/v1/auth/login,797,0,534
+1747818680462,452,Create Products- POST ,201,Created,Create Product Thread Group 3-5,text,true,,1924,372,1,3,https://api.escuelajs.co/api/v1/products,452,0,0
+1747818680569,552,PUT Update Product (Load Test),200,OK,Update product Thread Group 4-5,text,true,,1924,375,1,2,https://api.escuelajs.co/api/v1/products/54,552,0,0
+1747818680881,792,Login - POST / auth/login,201,Created,Login Thread Group 1-4,text,true,,1813,278,1,1,https://api.escuelajs.co/api/v1/auth/login,791,0,526
+1747818681881,788,Login - POST / auth/login,201,Created,Login Thread Group 1-5,text,true,,1801,278,1,1,https://api.escuelajs.co/api/v1/auth/login,787,0,521
+1747818682884,793,Login - POST / auth/login,201,Created,Login Thread Group 1-6,text,true,,1805,278,1,1,https://api.escuelajs.co/api/v1/auth/login,792,0,533
+1747818683882,780,Login - POST / auth/login,201,Created,Login Thread Group 1-7,text,true,,1813,278,1,1,https://api.escuelajs.co/api/v1/auth/login,778,0,513
+1747818684881,814,Login - POST / auth/login,201,Created,Login Thread Group 1-8,text,true,,1805,278,1,1,https://api.escuelajs.co/api/v1/auth/login,813,0,551
+1747818686896,805,Login - POST / auth/login,201,Created,Login Thread Group 1-10,text,true,,1801,278,2,2,https://api.escuelajs.co/api/v1/auth/login,804,0,543
+1747818685882,2107,Login - POST / auth/login,201,Created,Login Thread Group 1-9,text,true,,1801,278,1,1,https://api.escuelajs.co/api/v1/auth/login,2107,0,1800
