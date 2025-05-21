@@ -132,3 +132,4 @@ Pull requests are welcome! For any major changes, please open an issue first.
 * [Platzi Fake Store API](https://fakeapi.platzi.com/)
 * [Apache JMeter](https://jmeter.apache.org/)
 * [JMeter Plugins](https://jmeter-plugins.org/)
+* [ChatGPT](https://chatgpt.com/)
