@@ -51,6 +51,19 @@ This project focuses on **load testing, validating REST API endpoints and endura
   * Response Code = 200
   * Response contains product list or valid details
 
+
+### ✅ Scenario 4.1: View Product by ID through Parametrized CSV(GET `/products` or `/products/{id}`) 
+
+* **Purpose:** Simulating multiple get request for product using parametrized id through csv file.
+* * **Dynamic ID:** Captured from csv file `products_id.csv`. 
+* **Assertions:**
+
+  * Response Code = 200
+  * Response contains product list or valid details
+* * **Outcome:** Status code 400 for id of products not in the API. 
+
+
+
 ### ✅ Scenario 5: Login (POST `/auth/login`)
 
 * **Tested for:** Valid credentials
