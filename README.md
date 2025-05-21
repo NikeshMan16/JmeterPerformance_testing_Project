@@ -52,10 +52,10 @@ This project focuses on **load testing, validating REST API endpoints and endura
   * Response contains product list or valid details
 
 
-### ✅ Scenario 4.1: View Product by ID through Parametrized CSV(GET `/products` or `/products/{id}`) 
+### ✅ Scenario 5: View Product by ID through Parametrized CSV(GET `/products` or `/products/{id}`) 
 
 * **Purpose:** Simulating multiple get request for product using parametrized id through csv file.
-* * **Dynamic ID:** Captured from csv file `products_id.csv`. 
+* **Dynamic ID:** Captured from csv file `products_id.csv`. 
 * **Assertions:**
 
   * Response Code = 200
@@ -64,12 +64,12 @@ This project focuses on **load testing, validating REST API endpoints and endura
 
 
 
-### ✅ Scenario 5: Login (POST `/auth/login`)
+### ✅ Scenario 6: Login (POST `/auth/login`)
 
 * **Tested for:** Valid credentials
 * **Outcome:** Identified API issues (401 Unauthorized) 
 
-### ✅ Scenario 6: Endurance Testing under load for 5 minutes(GET `/products` and `/categories)
+### ✅ Scenario 7: Endurance Testing under load for 5 minutes(GET `/products` and `/categories)
 * **Purpose:** Simulate multiple users viewing products and categories under load.
 * **Assertions:**
 
