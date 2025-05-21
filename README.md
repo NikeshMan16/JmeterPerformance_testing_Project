@@ -99,11 +99,11 @@ This project focuses on **load testing and validating REST API endpoints** of th
 ## 🚀 How to Run This Test
 
 1. Clone the repo
-2. Open `product_test_plan.jmx` in Apache JMeter
+2. Open `FakeStoreLoadTest.jmx` in Apache JMeter
 3. Run using GUI or CLI:
 
    ```bash
-   jmeter -n -t product_test_plan.jmx -l result.jtl -e -o ./report
+   jmeter -n -t FakeStoreLoadTest.jmx -l result.jtl -e -o ./report
    ```
 4. Open `./report/index.html` to view HTML report
 
@@ -116,6 +116,7 @@ This project focuses on **load testing and validating REST API endpoints** of th
 * Dockerized JMeter execution
 
 ---
+### For more info, check out explanation docs in the project
 
 ## 🤝 Contributions
 
