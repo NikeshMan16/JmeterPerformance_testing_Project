@@ -41,7 +41,8 @@ This project focuses on **load testing and validating REST API endpoints** of th
 * **Purpose:** Simulate deletion of a product and confirm status.
 * **Assertions:**
 
-  * Response Code = 200 or 204
+  * Response Code = 200 (in this api) [generally 200 or 204]
+  * Response data contains 'true'
 
 ### ✅ Scenario 4: View Product (GET `/products` or `/products/{id}`)
 
@@ -56,6 +57,15 @@ This project focuses on **load testing and validating REST API endpoints** of th
 * **Tested for:** Valid credentials
 * **Outcome:** Identified API issues (401 Unauthorized)
 
+### ✅ Scenario 6: Endurance Testing under load for 5 minutes (GET `/products` and GET `/categories`)
+
+* **Purpose:** Simulation of continuous load for 5 minutes to observe api behavior under load 
+* **Outcome:** Identified API issues (401 Unauthorized)
+* **Assertions:**
+
+  * Response Code = 200
+  * Response contains product list or valid details
+    
 ---
 
 ## 📊 Performance Metrics Captured
@@ -103,7 +113,6 @@ This project focuses on **load testing and validating REST API endpoints** of th
 
 * CI/CD integration using **Jenkins**
 * Integration with **Grafana + InfluxDB** for real-time monitoring
-* Use of CSV Data Set Config for user input simulation
 * Dockerized JMeter execution
 
 ---
