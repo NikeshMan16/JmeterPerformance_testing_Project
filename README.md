@@ -76,12 +76,13 @@ This project focuses on **load testing, validating REST API endpoints and endura
 
 ---
 
-## 📈 Visual Reports
+## 📈 Visual Reports and Documentations
 
 * Summary Report
 * Graph Results
 * Duration Assertions
 * View Results Tree (with sample responses and debug info)
+* Explanation document added in the project folder itself(Process_explanation.docx)
 
 ---
 
