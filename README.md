@@ -91,11 +91,12 @@ This project focuses on **load testing, validating REST API endpoints and endura
 
 ## 📈 Visual Reports and Documentations
 
+* Explanation document added in the project folder itself(**Process_explanation.docx**)
 * Summary Report
 * Graph Results
 * Duration Assertions
 * View Results Tree (with sample responses and debug info)
-* Explanation document added in the project folder itself(Process_explanation.docx)
+
 
 ---
 
@@ -129,11 +130,6 @@ This project focuses on **load testing, validating REST API endpoints and endura
 
 ---
 
-## 🤝 Contributions
-
-Pull requests are welcome! For any major changes, please open an issue first.
-
----
 
 ## 📄 License
 
