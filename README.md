@@ -1,63 +1,46 @@
 **Performance Testing E-Commerce REST APIs Using Apache JMeter**
 
-Project Overview
+ Project Overview
 
-This project focuses on load testing and validating REST API endpoints of the Platzi Fake Store API, simulating typical user actions such as creating, updating, deleting, and retrieving product details. The goal was to evaluate performance under stress and ensure correct functionality using Apache JMeter.
+ This project focuses on load testing and validating REST API endpoints of the Platzi Fake Store API, simulating typical user actions such as creating, updating, deleting, and retrieving product details. The goal was to evaluate performance under stress and ensure correct functionality using Apache JMeter.
 
 Tools & Technologies
+1. Apache JMeter (v5.6+)
+2. JMeter Plugins (Graphs Generator Listener, Assertions, Timers)
+3. Postman (for initial testing)
+4. JSON REST API
+5. GitHub (for source and documentation)
 
-Apache JMeter (v5.6+)
-
-JMeter Plugins (Graphs Generator Listener, Assertions, Timers)
-
-Postman (for initial testing)
-
-JSON REST API
-
-GitHub (for source and documentation)
-
- Test Scenarios Implemented
+Test Scenarios Implemented
 
 Scenario 1: Create Product (POST /products)
-
-Purpose: Simulate adding new products to the catalog.
+_Purpose: Simulate adding new products to the catalog._
 
 Assertions:
-
 Response Code = 201
-
 Response Data contains expected title, price, description
-
 Duration Assertion < 2000ms
 
 Scenario 2: Update Product (PUT /products/{id})
-
-Purpose: Test updating an existing product using a dynamic product ID.
+_Purpose: Test updating an existing product using a dynamic product ID._
 
 Dynamic ID: Captured using JSON Extractor after product creation.
 
 Assertions:
-
 Response Code = 200
-
 Updated values reflected in response
 
 Scenario 3: Delete Product (DELETE /products/{id})
-
-Purpose: Simulate deletion of a product and confirm status.
+_Purpose: Simulate deletion of a product and confirm status._
 
 Assertions:
-
 Response Code = 200 or 204
 
 Scenario 4: View Product (GET /products or /products/{id})
-
-Purpose: Simulate users browsing products.
+_Purpose: Simulate users browsing products._
 
 Assertions:
-
 Response Code = 200
-
 Response contains product list or valid details
 
 Scenario 5: Login (POST /auth/login)
@@ -66,7 +49,7 @@ Tested for: Valid credentials
 
 Outcome: Identified API issues (401 Unauthorized)
 
-📊 Performance Metrics Captured
+Performance Metrics Captured
 
 Response Time (ms)
 
