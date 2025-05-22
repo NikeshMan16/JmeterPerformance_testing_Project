@@ -150,7 +150,7 @@ This project focuses on **load testing, validating REST API endpoints and endura
 
 
 ![Screenshot 2025-05-22 101901](https://github.com/user-attachments/assets/75e79eae-b828-46f4-98f2-05ac169d2c24)
-**Errors**
+## Errors
 
 ---
 Error in this case specifically occurred because thread group was initialized at threads:5 and ramp-up-period = 5 with duration loop of 2. The csv values in product id is given from 1,2,3... and so on. Only valid product in the api was with id no. 5.
