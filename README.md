@@ -146,7 +146,12 @@ This project focuses on **load testing, validating REST API endpoints and endura
 
 ## Screenshots!
 **Screenshots for the report**
-![Screenshot 2025-05-21 145852](https://github.com/user-attachments/assets/4895d6bf-b8c1-4ac7-8372-b2c638bfb608)
-![Screenshot 2025-05-21 150041](https://github.com/user-attachments/assets/f152c7c4-1e40-4333-be68-f2c1aae8d526)
+![Screenshot 2025-05-22 101737](https://github.com/user-attachments/assets/66e04580-2f17-48a7-bcf6-0d5b69a64dfc)
+s/f152c7c4-1e40-4333-be68-f2c1aae8d526)
 
+![Screenshot 2025-05-22 101901](https://github.com/user-attachments/assets/75e79eae-b828-46f4-98f2-05ac169d2c24)
+**Errors**
+Error in this case specifically occurred because thread group was initialized at threads:5 and ramp-up-period = 5 with duration loop of 2. The csv values in product id is given from 1,2,3... and so on. Only valid product in the api was with id no. 5.
+![Screenshot 2025-05-22 101919](https://github.com/user-attachments/assets/ee3dd200-d155-47c7-a9b4-a82eb0806b97)
 
+![Screenshot 2025-05-22 101943](https://github.com/user-attachments/assets/d3b3b7eb-c3c5-48a9-9abe-fbdd231ef755)
