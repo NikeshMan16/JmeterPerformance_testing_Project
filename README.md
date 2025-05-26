@@ -75,6 +75,14 @@ This project focuses on **load testing, validating REST API endpoints and endura
 
   * Response Code = 200
   * Response contains product list or valid details
+ 
+ ### ✅ Scenario 8: Spike Testing(GET `/products`)
+* **Purpose:** Simulate sudden spike of user requests to viewing products.
+* **Assertions:**
+
+  * Response Code = 200
+  * Response contains product list or valid details
+
 
 
 ---
